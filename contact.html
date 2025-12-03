@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Galsen'Style</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            padding-top: 90px; /* Permet de voir la navbar fixe */
+            background-color: #FFF7F2;
+            font-family: "Georgia", serif;
+            color: #4E372E;
+        }
+        .section-title {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .highlight {
+            color: #E46A3A;
+        }
+        .contact-box {
+            background: #FFF3EA;
+            padding: 30px;
+            border-radius: 20px;
+        }
+        .info-icon {
+            width: 55px; 
+            height: 55px;
+            background: #FDEFE7;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .info-icon i {
+            color: #E46A3A;
+            font-size: 1.4rem;
+        }
+        .btn-orange {
+            background-color: #E46A3A;
+            color: white;
+            border-radius: 10px;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            border: none;
+        }
+        .btn-orange:hover {
+            background-color: #c9572d;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+      <!-- NAVBAR FIXE -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-white shadow-sm py-3">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold fs-3" href="index.html">
+            Tidio'<span class="text-warning">Style</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto me-4">
+                <li class="nav-item"><a class="nav-link fw-semibold" href="index.html">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold" href="collection.html">Collection</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold" href="apropos.html">À propos</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold" href="contact.html">Contact</a></li>
+            </ul>
+
+            <a href="#" class="btn btn-warning px-4 fw-semibold">Nous Contacter</a>
+            </div>
+
+        </div>
+    </nav>
+
+<!-- HERO -->
+<section class="py-5 text-center">
+    <div class="container">
+        <h1 class="section-title">Nous <span class="highlight">Contacter</span></h1>
+        <p class="lead mt-2">Vous avez une question ? Écrivez-nous, nous serons ravis de vous répondre.</p>
+    </div>
+</section>
+
+<!-- SECTION CONTACT -->
+<section class="py-5">
+    <div class="container">
+        <div class="row g-5">
+
+            <!-- INFORMATIONS -->
+            <div class="col-lg-4">
+                <h3 class="fw-bold mb-4">Informations</h3>
+
+                <div class="d-flex mb-4">
+                    <div class="info-icon me-3"><i class="bi bi-geo-alt-fill"></i></div>
+                    <div>
+                        <h5 class="fw-bold">Adresse</h5>
+                        <p>Dakar, Sénégal</p>
+                    </div>
+                </div>
+
+                <div class="d-flex mb-4">
+                    <div class="info-icon me-3"><i class="bi bi-telephone-fill"></i></div>
+                    <div>
+                        <h5 class="fw-bold">Téléphone</h5>
+                        <p>+221 77 482 52 49</p>
+                    </div>
+                </div>
+
+                <div class="d-flex mb-4">
+                    <div class="info-icon me-3"><i class="bi bi-envelope-fill"></i></div>
+                    <div>
+                        <h5 class="fw-bold">Email</h5>
+                        <p>bahcheick508@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- FORMULAIRE -->
+            <div class="col-lg-8">
+                <div class="contact-box shadow-sm">
+                    <h3 class="fw-bold mb-4">Envoyer un message</h3>
+
+                    <form action="send_mail.php" method="POST">
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Nom complet</label>
+                                <input type="text" name="name" class="form-control form-control-lg" required>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" name="email" class="form-control form-control-lg" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Sujet</label>
+                            <input type="text" name="subject" class="form-control form-control-lg" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea name="message" rows="5" class="form-control form-control-lg" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-orange mt-2">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer py-5 mt-5">
+        <div class="container">
+            <div class="row">
+
+                <!-- Colonne 1 : Logo + description -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h4 class="fw-bold mb-3">
+                        <i class="bi bi-heart-fill text-danger me-2"></i> Tidio'Style
+                    </h4>
+                    <p class="text-muted">
+                        Votre boutique de prêt-à-porter africain, inspirée du savoir-faire
+                        traditionnel et modernisée avec élégance.
+                    </p>
+                </div>
+
+                <!-- Colonne 2 : Liens rapides -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Liens rapides</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Boutique</a></li>
+                        <li><a href="#">Nouveautés</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 3 : Informations -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Informations</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Nos engagements</a></li>
+                        <li><a href="#">Termes & Conditions</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 4 : Contact -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Contact</h6>
+
+                    <p class="mb-1"><i class="bi bi-telephone me-2"></i> +221 77 482 52 49</p>
+                    <p class="mb-1"><i class="bi bi-telephone me-2"></i> +223 82 72 56 82</p>
+                    <p class="mb-1"><i class="bi bi-envelope me-2"></i> bahcheick508@gmail.com</p>
+                    <p><i class="bi bi-geo-alt me-2"></i> Dakar, Sénégal</p>
+
+                    <!-- Réseaux sociaux -->
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="text-center pt-3">
+                <p class="mb-0 text-muted">© 2025 Tidio'Style — Tous droits réservés.</p>
+            </div>
+
+        </div>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

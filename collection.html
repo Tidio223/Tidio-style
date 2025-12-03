@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Section bannière */
+        .hero-collection {
+            padding: 80px 0;
+        }
+
+        .hero-collection h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .hero-collection .highlight {
+            color: #ff6f00;   /* Orange */
+        }
+
+        /* Style des cartes produits */
+        .product-card {
+            border-radius: 15px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-info h5 {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .product-info p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .product-price {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #ff6f00;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR FIXE -->
+<nav class="navbar fixed-top navbar-expand-lg bg-white shadow-sm py-3">
+  <div class="container">
+
+    <a class="navbar-brand fw-bold fs-3" href="index.html">
+      Tidio'<span class="text-warning">Style</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto me-4">
+        <li class="nav-item"><a class="nav-link fw-semibold" href="index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="collection.html">Collection</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="apropos.html">À propos</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="contact.html">Contact</a></li>
+      </ul>
+
+      <a href="#" class="btn btn-warning px-4 fw-semibold">Nous Contacter</a>
+    </div>
+
+  </div>
+</nav>
+
+    <!-- SECTION TITRE -->
+    <section class="hero-collection text-center">
+        <div class="container">
+            <h1>Notre <span class="highlight">Collection</span></h1>
+            <p class="lead mt-3">Découvrez nos pièces traditionnelles uniques inspirées de notre riche culture.</p>
+        </div>
+    </section>
+
+    <!-- SECTION COLLECTION (6 CARTES) -->
+    <section class="container pb-5">
+        <div class="row g-4">
+
+            <!-- Carte 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="product-card">
+                    <img src="images/h3r.jpeg" alt="Produit 1">
+                    <div class="product-overlay">
+                        <a class="product-btn">En savoir plus</a>
+                    </div>
+
+                    <div class="product-info">
+                        <h5>Grand costume Royal</h5>
+                        <p>Élégant boubou traditionnel avec broderies dorées, parfait pour les occasions spéciales et cérémonies..</p>
+                        <div class="product-price">289 $</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="product-card">
+                    <img src="images/f5c.jpeg" alt="Produit 2">
+                    <div class="product-overlay">
+                        <a class="product-btn">En savoir plus</a>
+                    </div>
+
+                    <div class="product-info">
+                        <h5>Kaftan Émeraude</h5>
+                        <p>Kaftan fluide en soie avec motifs africains authentiques et finitions en or, symbole d'élégance.</p>
+                        <div class="product-price">245 $</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="product-card">
+                    <img src="images/f8.jpeg" alt="Produit 3">
+                    <div class="product-overlay">
+                        <a class="product-btn">En savoir plus</a>
+                    </div>
+
+                    <div class="product-info">
+                        <h5>Robe Ankara Moderne</h5>
+                        <p>Robe contemporaine en tissu wax coloré, alliant tradition et modernité pour un style unique.</p>
+                        <div class="product-price">159 $</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 4 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="product-card">
+                    <img src="images/f9.jpeg" alt="Produit 4">
+                    <div class="product-overlay">
+                        <a class="product-btn">En savoir plus</a>
+                    </div>
+
+                    <div class="product-info">
+                        <h5>Dashiki Classique</h5>
+                        <p>Chemise traditionnelle unisexe avec motifs géométriques vibrants.</p>
+                        <div class="product-price">89 $</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 5 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="product-card">
+                    <img src="images/f3r.jpeg" alt="Produit 5">
+                    <div class="product-overlay">
+                        <a class="product-btn">En savoir plus</a>
+                    </div>
+
+                    <div class="product-info">
+                        <h5>Ensemble Kente</h5>
+                        <p>Ensemble deux pièces en tissu kente authentique aux couleurs royales, héritage culturel ghanéen.</p>
+                        <div class="product-price">325 $</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 6 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="product-card">
+                    <img src="images/f2o.jpeg" alt="Produit 6">
+                    <div class="product-overlay">
+                        <a class="product-btn">En savoir plus</a>
+                    </div>
+
+                    <div class="product-info">
+                        <h5>Agbada Prestigieux</h5>
+                        <p>Ensemble trois pièces luxueux avec broderies traditionnelles nigérianes, pour les grandes occasions.</p>
+                        <div class="product-price">389 $</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION COMMANDE PERSONNALISÉE -->
+    <section class="py-5" style="background-color: #f7efe9;">
+        <div class="container text-center p-5" 
+            style="background: #f9f2ec; border-radius: 20px; max-width: 900px;">
+            
+            <h2 class="fw-bold mb-3" style="color: #4a2e2a;">
+                Commande Personnalisée
+            </h2>
+
+            <p class="mb-4" style="color: #7b5e56; font-size: 1.1rem;">
+                Vous recherchez une pièce sur mesure ? Contactez-nous pour créer ensemble 
+                la tenue traditionnelle de vos rêves, adaptée à vos goûts et à vos mesures.
+            </p>
+
+            <a href="contact.html" class="btn btn-lg" 
+            style="background-color: #e6764a; color: white; padding: 12px 30px; border-radius: 10px;">
+                Nous Contacter
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer py-5 mt-5">
+        <div class="container">
+            <div class="row">
+
+                <!-- Colonne 1 : Logo + description -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h4 class="fw-bold mb-3">
+                        <i class="bi bi-heart-fill text-danger me-2"></i> Tidio'Style
+                    </h4>
+                    <p class="text-muted">
+                        Votre boutique de prêt-à-porter africain, inspirée du savoir-faire
+                        traditionnel et modernisée avec élégance.
+                    </p>
+                </div>
+
+                <!-- Colonne 2 : Liens rapides -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Liens rapides</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Boutique</a></li>
+                        <li><a href="#">Nouveautés</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 3 : Informations -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Informations</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Nos engagements</a></li>
+                        <li><a href="#">Termes & Conditions</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 4 : Contact -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Contact</h6>
+
+                    <p class="mb-1"><i class="bi bi-telephone me-2"></i> +221 77 482 52 49</p>
+                    <p class="mb-1"><i class="bi bi-telephone me-2"></i> +223 82 72 56 82</p>
+                    <p class="mb-1"><i class="bi bi-envelope me-2"></i> bahcheick508@gmail.com</p>
+                    <p><i class="bi bi-geo-alt me-2"></i> Dakar, Sénégal</p>
+
+                    <!-- Réseaux sociaux -->
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="text-center pt-3">
+                <p class="mb-0 text-muted">© 2025 Tidio'Style — Tous droits réservés.</p>
+            </div>
+
+        </div>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
